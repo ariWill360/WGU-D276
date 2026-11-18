@@ -1,0 +1,183 @@
+:root {
+   /* OrangeRed*/
+    --color1: #ff4500;
+    /*Lightsea Green*/
+    --color2: #20B2AA;
+    /*LightSteel Blue*/
+    --color3: #B0C4DE;
+    /*Maroon*/
+    --color4: #800000;
+    /*Saddle Brown*/
+    --color5: #8b4513;
+    /*black*/
+    --color6: black; 
+}
+
+h1 {
+    color: var(--color4);
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.sectionHeader{
+    color: var(--color5);
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+background-color: gray;
+}
+
+#skillsList {
+    columns: 3;
+    font-weight: bold;
+}
+
+.employerName {
+    color: var(--color2);
+    font-weight: bold;
+}
+
+.positionTitle {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+#home {color: var(--color6)}
+#ContactMe {color: var(--color1)}
+#Resume {color: var(--color4)}
+#CareerGoals {color: var(--color4)}
+#CoverLetter {color: var(--color4)}
+#tables {color: var(--color4)}
+#Multimedia {color: var(--color6)}
+#forms {color: var(--color6)}
+
+nav a {
+  color: blue;
+}
+
+ul {
+  list-style: square inside;
+}
+
+
+table {
+    margin: 14px;
+    border-collapse: separate;
+    border-spacing: 7px;
+    padding: 7px;
+    width: 98%;
+}
+
+caption {
+    font-style:italic ;
+    color: blue;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+th {
+    font-style: italic;
+    font-variant: small-caps;
+    color: var(--color1);
+}
+
+td {
+    border: 1px solid var(--color4);
+    vertical-align: top;
+    padding: 7px;
+    color: var(--color2);
+}
+
+/*Reset default margins and padding*/
+* {
+box-sizing: border-box;
+}
+
+/* Form Container*/
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Each column*/
+.form-column {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="company"],
+input[type="time"],
+textarea,
+select{
+    width: 200px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/*Buttons*/
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #ff4500;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #800000;
+    color: white;
+}
+
+/*Responsive adjustments*/
+@media (max-width: 600px) {
+.form-column{
+    min-width: 100%; /*stack column on small screens*/
+}    
+}
